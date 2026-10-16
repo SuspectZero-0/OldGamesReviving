@@ -1,0 +1,46 @@
+name: Game suggestion
+description: Suggest a game for a future mod project
+title: "[Suggestion] "
+labels: ["suggestion"]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game name and release year
+      placeholder: "Example: Freedom Fighters (2003)"
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: Where can it be bought legally today?
+      placeholder: Steam, GOG, Epic, other
+    validations:
+      required: true
+  - type: dropdown
+    id: goal
+    attributes:
+      label: What would you like to see?
+      multiple: true
+      options:
+        - Visual fixes (resolution, widescreen, stability)
+        - DLSS or other modern upscaling
+        - RTX Remix (path tracing)
+        - VR
+        - Not sure
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Requirements
+      options:
+        - label: The game has a single player mode
+          required: true
+        - label: The game can be bought legally today
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Why this game?
+      description: Known problems on modern PCs, existing mods, anything useful
