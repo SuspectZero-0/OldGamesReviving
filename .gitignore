@@ -1,0 +1,18 @@
+# Never commit third party binaries or game files
+*.dll
+*.exe
+*.asi
+*.pak
+*.ucas
+*.utoc
+*.bik
+
+# Archives and recordings belong in Releases or on YouTube, not in git
+*.zip
+*.7z
+*.rar
+*.mp4
+*.mkv
+
+# Logs and local tool output
+*.log
